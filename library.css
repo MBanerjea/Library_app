@@ -7,22 +7,20 @@
 }
 
 .cards {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 
 
 .cards div {
-  /* width: 300px;
-  height: 400px; */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
-  flex: 1 0 300px;
   margin: 10px 10px;
   padding: 20px;
   border: 10px dashed burlywood;
@@ -31,8 +29,4 @@
 
 .cards button {
   margin: 10px 0px;
-}
-
-.cards div p {
-  display: flex;
 }
