@@ -74,8 +74,8 @@ function displayToPage() {
     })
 
     cards.appendChild(newdiv);
-    newdiv.appendChild(removeButton);
     newdiv.appendChild(toggleButton);
+    newdiv.appendChild(removeButton);
 
     // console.log(myLibrary[i]["title"]);
     i++;
