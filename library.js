@@ -37,7 +37,7 @@ function addBookToLibrary() {
 
   const book = new Book(title, author, pages, read);
   myLibrary.push(book);
-  console.log(myLibrary);
+  // console.log(myLibrary);
   displayToPage();
 }
 
@@ -77,7 +77,7 @@ function displayToPage() {
     newdiv.appendChild(removeButton);
     newdiv.appendChild(toggleButton);
 
-    console.log(myLibrary[i]["title"]);
+    // console.log(myLibrary[i]["title"]);
     i++;
   }
 }
