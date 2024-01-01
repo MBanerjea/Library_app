@@ -1,26 +1,39 @@
 const myLibrary = [];
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+// function Book(title, author, pages, read) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.read = read;
 
-  // this.toggleRead = function () {
-  //   this.read = !this.read;
-  // }
-  // this.info = function () {
-  //   if (read == "yes") {
-  //     return `${title} by ${author}, ${pages} pages, finished reading`
-  //   } else {
-  //     return `${title} by ${author}, ${pages} pages, not read yet`
-  //   }
-  // }
+//   // this.toggleRead = function () {
+//   //   this.read = !this.read;
+//   // }
+//   // this.info = function () {
+//   //   if (read == "yes") {
+//   //     return `${title} by ${author}, ${pages} pages, finished reading`
+//   //   } else {
+//   //     return `${title} by ${author}, ${pages} pages, not read yet`
+//   //   }
+//   // }
+// }
+
+// Book.prototype.toggleRead = function () {
+//   this.read = !this.read;
+// }
+
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+  toggleRead() {
+    this.read = !this.read;
+  }
 }
 
-Book.prototype.toggleRead = function () {
-  this.read = !this.read;
-}
 
 const addBook = document.querySelector("#addBook");
 addBook.addEventListener('click', function (event) {
